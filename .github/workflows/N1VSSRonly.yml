@@ -18,12 +18,12 @@ on:
     paths:
       - '.config'
   schedule:
-    - cron: 51 01 * * *
+    - cron: 39 05 * * *
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/Mattaclp/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: N1VSSRonly.config
