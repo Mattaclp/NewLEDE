@@ -18,12 +18,12 @@ on:
     paths:
       - '.config'
   schedule:
-    - cron: 01 14 * * *
+    - cron: 48 01 * * *
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/Mattaclp/lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Neo2.config
