@@ -29,6 +29,14 @@ mv luci-app-vssr package/lean/
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 mv luci-app-jd-dailybonus package/lean/
 
+# change qBittorrent 4.2.5
+sed -i 's/4428ed710cfbcc48e75c4cdb014b803ea3f67311f55f4cba0d148987986bd6c8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
+sed -i 's/4.3.1/4.2.5/g' package/lean/qBittorrent/Makefile
+sed -i 's/+qt5-core +qt5-network +qt5-sql +qt5-xml +rblibtorrent/+qt5-core +qt5-network +qt5-xml +rblibtorrent/g' package/lean/qBittorrent/Makefile
+sed -i 's/1.2.11/1.2.7/g' package/lean/rblibtorrent/Makefile
+sed -i 's/PKG_RELEASE=1/PKG_RELEASE=2/g' package/lean/rblibtorrent/Makefile
+sed -i 's/471e772cb7038f1bf5f44c32a09eb42fbb80ee99/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
+
 # add filebrowser
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-filebrowser package/lean/luci-app-filebrowser
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrowser package/lean/filebrowser
