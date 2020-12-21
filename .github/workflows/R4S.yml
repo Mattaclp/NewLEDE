@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: myN1
+name: R4S
 
 on:
   repository_dispatch:
@@ -18,7 +18,7 @@ on:
     paths:
       - '.config'
   schedule:
-    - cron: 00 16 * * *
+    - cron: 55 00 * * *
 #  watch:
 #    types: started
 
