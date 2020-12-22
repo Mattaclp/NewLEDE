@@ -17,13 +17,13 @@ on:
       - main
     paths:
       - '.config'
-#  schedule:
-#    - cron: 10 17 * * *
+  schedule:
+    - cron: 01 20 * * *
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/Mattaclp/lede
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: myN1.config
