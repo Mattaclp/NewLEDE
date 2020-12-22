@@ -59,8 +59,9 @@ sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' 
 # add diskman
 rm -rf package/lean/luci-app-diskman
 rm -rf package/lean/parted
-git clone https://github.com/lisaac/luci-app-diskman.git package/lean/luci-app-diskman
-mkdir -p package/lean/parted && cp -i package/lean/luci-app-diskman/Parted.Makefile package/lean/parted/Makefile
+svn co https://github.com/lisaac/luci-app-diskman/trunk/applications/luci-app-diskman package/lean/luci-app-diskman
+git clone https://github.com/lisaac/luci-app-diskman.git
+mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/lean/parted/Makefile
 
 # add diskman
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-diskman package/lean/luci-app-diskman
