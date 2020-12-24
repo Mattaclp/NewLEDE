@@ -83,6 +83,11 @@ pushd po2lmo
 make && sudo make install
 popd
 
+# Add Beginner-Go packages
+#svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-webrestriction package/lean/luci-app-control-webrestriction
+#svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-weburl package/lean/luci-app-control-weburl
+#svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-eqos package/lean/luci-app-eqos
+
 # Add openclash
 # echo "src-git openclash https://github.com/vernesong/OpenClash;master" >> feeds.conf.default
 
