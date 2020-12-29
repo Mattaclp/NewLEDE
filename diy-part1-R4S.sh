@@ -9,7 +9,7 @@
 #=============================================================
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
@@ -64,7 +64,7 @@ git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # Add Mattraks helloworld
-#sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
 git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
 git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
