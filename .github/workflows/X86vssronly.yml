@@ -17,13 +17,13 @@ on:
       - main
     paths:
       - '.config'
-#  schedule:
-#    - cron: 40 07 * * *
+  schedule:
+    - cron: 56 05 * * *
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/Mattaclp/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: X86vssronly.config
