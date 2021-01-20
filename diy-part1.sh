@@ -26,8 +26,8 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 
 # add JD
-#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-#mv luci-app-jd-dailybonus package/lean/
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
 
 # change qBittorrent 4.2.5
 sed -i 's/4428ed710cfbcc48e75c4cdb014b803ea3f67311f55f4cba0d148987986bd6c8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
