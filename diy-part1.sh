@@ -51,8 +51,8 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHo
 #mv target.mk target/linux/armvirt/64/
 
 # change Xray-core
-sed -i 's/PKG_VERSION:=1.2.2/PKG_VERSION:=1.2.3/g' package/lean/xray/Makefile
-sed -i 's/b9b38bc69e660d3a6d0545efea4d0891ee81a2d55c83a6fa893cbd680a071023/1deed281d2b976c0132b57194a09b62a1b978ec1b35d8329894b80f8d47befb7/g' package/lean/xray/Makefile
+#sed -i 's/PKG_VERSION:=1.2.2/PKG_VERSION:=1.2.3/g' package/lean/xray/Makefile
+#sed -i 's/b9b38bc69e660d3a6d0545efea4d0891ee81a2d55c83a6fa893cbd680a071023/1deed281d2b976c0132b57194a09b62a1b978ec1b35d8329894b80f8d47befb7/g' package/lean/xray/Makefile
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
