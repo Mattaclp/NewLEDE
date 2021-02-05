@@ -43,7 +43,7 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrows
 
 # add Adguardhome
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-adguardhome package/lean/luci-app-adguardhome
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
 
 # set ARM to aarch64_generic
 rm -rf target/linux/armvirt/64/target.mk
