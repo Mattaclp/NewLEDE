@@ -75,6 +75,10 @@ mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/l
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
+# add gowebdav
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/luci-app-gowebdav package/lean/luci-app-gowebdav
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/gowebdav package/lean/gowebdav
+
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
