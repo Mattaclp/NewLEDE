@@ -51,8 +51,8 @@ wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
 # change Xray-core
-#sed -i 's/PKG_VERSION:=1.2.3/PKG_VERSION:=1.2.4/g' feeds/helloworld/xray/Makefile
-#sed -i 's/1deed281d2b976c0132b57194a09b62a1b978ec1b35d8329894b80f8d47befb7/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/g' feeds/helloworld/xray/Makefile
+sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' feeds/helloworld/xray/Makefile
+sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' feeds/helloworld/xray/Makefile
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
