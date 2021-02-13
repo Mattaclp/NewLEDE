@@ -43,7 +43,7 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrows
 
 # add Adguardhome
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-adguardhome package/lean/luci-app-adguardhome
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
+#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
 
 # set ARM to aarch64_generic
 rm -rf target/linux/armvirt/64/target.mk
@@ -52,8 +52,8 @@ mv target.mk target/linux/armvirt/64/
 
 # change Xray-core
 git clone https://github.com/fw876/helloworld.git package/mydiy
-sed -i 's/PKG_VERSION:=1.2.3/PKG_VERSION:=1.2.4/g' package/mydiy/xray/Makefile
-sed -i 's/1deed281d2b976c0132b57194a09b62a1b978ec1b35d8329894b80f8d47befb7/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/g' package/mydiy/xray/Makefile
+sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray/Makefile
+sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' package/mydiy/xray/Makefile
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
