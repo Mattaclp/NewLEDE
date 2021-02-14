@@ -52,8 +52,8 @@ mv target.mk target/linux/armvirt/64/
 
 # change Xray-core
 git clone https://github.com/fw876/helloworld.git package/mydiy
-sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray/Makefile
-sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' package/mydiy/xray/Makefile
+sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray-core/Makefile
+sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' package/mydiy/xray-core/Makefile
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
