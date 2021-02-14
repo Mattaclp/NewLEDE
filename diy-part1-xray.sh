@@ -50,10 +50,16 @@ rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
-# change Xray-core
+# change Xray-core (Beginner-Go)
 git clone https://github.com/fw876/helloworld.git package/mydiy
-sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray-core/Makefile
-sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' package/mydiy/xray-core/Makefile
+wget https://github.com/fw876/helloworld/raw/06fb82d5a6eae8914970b76a7c8e071d6ee5b5d8/xray-core/Makefile
+rm -rf package/mydiy/xray-core/Makefile
+mv Makefile package/mydiy/xray-core/
+
+# change Xray-core
+#git clone https://github.com/fw876/helloworld.git package/mydiy
+#sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray-core/Makefile
+#sed -i 's/25f6c9edec0ac1f98328943cd2bb760ac7b69107582f9d27e43559da39dc01ed/1125af4411655abf47913af14a22fd7e2b13371e3566cc03676207519b0fe407/g' package/mydiy/xray-core/Makefile
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
