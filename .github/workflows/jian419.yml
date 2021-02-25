@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 01 18 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
@@ -30,7 +30,7 @@ env:
   REPO_BRANCH: lede-17.01
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: jian419.config
-  DIY_P1_SH: diy-part1.sh
+  DIY_P1_SH: diy-part1-lede-stable.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: false
