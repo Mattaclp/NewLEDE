@@ -79,6 +79,9 @@ mv luci-app-koolproxyR package/lean/
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/luci-app-gowebdav package/lean/luci-app-gowebdav
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/gowebdav package/lean/gowebdav
 
+# add serverchan
+git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
+
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
