@@ -51,9 +51,9 @@ wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
 # change Xray-core (Beginner-Go)
-git clone https://github.com/fw876/helloworld.git package/mydiy
-rm -rf package/mydiy/xray-core/Makefile
-svn co https://github.com/Mattaclp/NewLEDE/trunk/xray-core package/mydiy/xray-core
+#git clone https://github.com/fw876/helloworld.git package/mydiy
+#rm -rf package/mydiy/xray-core/Makefile
+#svn co https://github.com/Mattaclp/NewLEDE/trunk/xray-core package/mydiy/xray-core
 
 # change Xray-core
 #git clone https://github.com/fw876/helloworld.git package/mydiy
