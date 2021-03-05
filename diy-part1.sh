@@ -46,9 +46,9 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
 
 # set ARM to aarch64_generic
-#rm -rf target/linux/armvirt/64/target.mk
-#wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
-#mv target.mk target/linux/armvirt/64/
+rm -rf target/linux/armvirt/64/target.mk
+wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
+mv target.mk target/linux/armvirt/64/
 
 # change Xray-core
 #sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' feeds/helloworld/xray/Makefile
