@@ -24,4 +24,3 @@ sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' pa
 #sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=4.19/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=4.19/g' target/linux/x86/Makefile
 
-svn checkout https://github.com/openwrt/packages/trunk/utils/libnetwork packages/utils
