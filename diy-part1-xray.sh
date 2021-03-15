@@ -55,6 +55,9 @@ mv target.mk target/linux/armvirt/64/
 #rm -rf package/mydiy/xray-core/Makefile
 #svn co https://github.com/Mattaclp/NewLEDE/trunk/xray-core package/mydiy/xray-core
 
+# change Xray-core (Beginner-Go)2
+git clone https://github.com/Mattaclp/helloworld.git package/mydiy
+
 # change Xray-core
 #git clone https://github.com/fw876/helloworld.git package/mydiy
 #sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' package/mydiy/xray-core/Makefile
