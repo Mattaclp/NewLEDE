@@ -70,7 +70,7 @@ git clone https://github.com/Mattaclp/helloworld.git package/mydiy
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 
 # add my passwall
-sed -i '$a src-git diy1 https://github.com/Mattaclp/openwrt-passwall.git;main' feeds.conf.default
+#sed -i '$a src-git diy1 https://github.com/Mattaclp/openwrt-passwall.git;main' feeds.conf.default
 
 # add diskman
 rm -rf package/lean/luci-app-diskman
