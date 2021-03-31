@@ -9,7 +9,7 @@
 #=============================================================
 
 # Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
@@ -56,7 +56,7 @@ mv target.mk target/linux/armvirt/64/
 #svn co https://github.com/Mattaclp/NewLEDE/trunk/xray-core package/mydiy/xray-core
 
 # change Xray-core (Beginner-Go)2
-git clone https://github.com/Mattaclp/helloworld.git package/mydiy
+#git clone https://github.com/Mattaclp/helloworld.git package/mydiy
 
 # change Xray-core
 #git clone https://github.com/fw876/helloworld.git package/mydiy
