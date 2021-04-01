@@ -40,6 +40,8 @@ sed -i 's/e3f2b016dcd37a9a6e8a94006c7befcf2cb7bfac/8e710151c80e655ee0513ca37c367
 # add Adguardhome
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/lean/adguardhome
+svn co https://github.com/immortalwrt/packages/trunk/lang/node-yarn package/lean/node-yarn
+svn co https://github.com/immortalwrt/packages/trunk/devel/packr package/lean/packr
 
 # add filebrowser
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
