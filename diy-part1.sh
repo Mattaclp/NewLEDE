@@ -37,13 +37,17 @@ sed -i 's/1.2.12/1.2.7/g' package/lean/rblibtorrent/Makefile
 sed -i 's/PKG_RELEASE=1/PKG_RELEASE=2/g' package/lean/rblibtorrent/Makefile
 sed -i 's/e3f2b016dcd37a9a6e8a94006c7befcf2cb7bfac/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
 
-# add filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-filebrowser package/lean/luci-app-filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrowser package/lean/filebrowser
-
 # add Adguardhome
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-adguardhome package/lean/luci-app-adguardhome
-#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
+svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/lean/adguardhome
+
+# add filebrowser
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
+svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/lean/filebrowser
+
+# add gowebdav
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
+svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/lean/gowebdav
 
 # set ARM to aarch64_generic
 rm -rf target/linux/armvirt/64/target.mk
@@ -74,10 +78,6 @@ mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/l
 # add koolproxyR
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
-
-# add gowebdav
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/luci-app-gowebdav package/lean/luci-app-gowebdav
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/gowebdav package/lean/gowebdav
 
 # add serverchan
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
