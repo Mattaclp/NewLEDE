@@ -14,6 +14,10 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
+# Add immortalwrt packages
+sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
+sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
@@ -41,18 +45,18 @@ sed -i 's/PKG_RELEASE=1/PKG_RELEASE=2/g' package/lean/rblibtorrent/Makefile
 sed -i 's/e3f2b016dcd37a9a6e8a94006c7befcf2cb7bfac/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
 
 # add Adguardhome
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
-svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/lean/adguardhome
-svn co https://github.com/immortalwrt/packages/trunk/lang/node-yarn package/lean/node-yarn
-svn co https://github.com/immortalwrt/packages/trunk/devel/packr package/lean/packr
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
+#svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/lean/adguardhome
+#svn co https://github.com/immortalwrt/packages/trunk/lang/node-yarn package/lean/node-yarn
+#svn co https://github.com/immortalwrt/packages/trunk/devel/packr package/lean/packr
 
 # add filebrowser
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
-svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/lean/filebrowser
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
+#svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/lean/filebrowser
 
 # add gowebdav
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
-svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/lean/gowebdav
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
+#svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/lean/gowebdav
 
 # set ARM to aarch64_generic
 rm -rf target/linux/armvirt/64/target.mk
