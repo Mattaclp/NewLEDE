@@ -40,9 +40,10 @@ rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/
 sed -i 's/8f615aa06f77286881d40b5f769f648221128b46f0bffc1f2fa101068f99ebe8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
 sed -i 's/4.3.4.1/4.2.5/g' package/lean/qBittorrent/Makefile
 sed -i 's/+qt5-core +qt5-network +qt5-sql +qt5-xml +rblibtorrent/+qt5-core +qt5-network +qt5-xml +rblibtorrent/g' package/lean/qBittorrent/Makefile
-sed -i 's/1.2.12/1.2.7/g' package/lean/rblibtorrent/Makefile
+sed -i 's/1.2.13/1.2.7/g' package/lean/rblibtorrent/Makefile
 sed -i 's/PKG_RELEASE=1/PKG_RELEASE=2/g' package/lean/rblibtorrent/Makefile
-sed -i 's/e3f2b016dcd37a9a6e8a94006c7befcf2cb7bfac/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
+sed -i 's/e00a152678fbce7903aa42bbd93e8b812f171928/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
+sed -i 's/*.so/libtorrent-rasterbar.so/g' package/lean/rblibtorrent/Makefile
 
 # add Adguardhome
 #svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
