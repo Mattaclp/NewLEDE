@@ -11,6 +11,12 @@
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# add passwall
+#sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+
+# add passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
+
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
@@ -70,9 +76,6 @@ mv target.mk target/linux/armvirt/64/
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
-# add passwall
-sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 
 # add diskman
 rm -rf package/lean/luci-app-diskman
