@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: N1dockerlitetmp
+name: N1skylite
 
 on:
   repository_dispatch:
@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 56 02 * * *
-  watch:
-    types: started
+#  watch:
+#    types: started
 
 
 env:
