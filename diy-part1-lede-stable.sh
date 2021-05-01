@@ -15,6 +15,19 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-v2ray-server
 rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/lean/
 
+# add passwall
+#sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+
+# add passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
+
+# Add my helloworld
+#sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
+
+# Add immortalwrt packages
+sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
+sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
@@ -31,23 +44,30 @@ mv luci-app-vssr package/lean/
 
 # add JD
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
+mv luci-app-jd-dailybonus package/lean/
 
 # change qBittorrent 4.2.5
-sed -i 's/4428ed710cfbcc48e75c4cdb014b803ea3f67311f55f4cba0d148987986bd6c8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
-sed -i 's/4.3.1/4.2.5/g' package/lean/qBittorrent/Makefile
+sed -i 's/8f615aa06f77286881d40b5f769f648221128b46f0bffc1f2fa101068f99ebe8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
+sed -i 's/4.3.4.1/4.2.5/g' package/lean/qBittorrent/Makefile
 sed -i 's/+qt5-core +qt5-network +qt5-sql +qt5-xml +rblibtorrent/+qt5-core +qt5-network +qt5-xml +rblibtorrent/g' package/lean/qBittorrent/Makefile
-sed -i 's/1.2.11/1.2.7/g' package/lean/rblibtorrent/Makefile
+sed -i 's/1.2.13/1.2.7/g' package/lean/rblibtorrent/Makefile
 sed -i 's/PKG_RELEASE=1/PKG_RELEASE=2/g' package/lean/rblibtorrent/Makefile
-sed -i 's/471e772cb7038f1bf5f44c32a09eb42fbb80ee99/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
-
-# add filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-filebrowser package/lean/luci-app-filebrowser
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/filebrowser package/lean/filebrowser
+sed -i 's/e00a152678fbce7903aa42bbd93e8b812f171928/8e710151c80e655ee0513ca37c367f75a448c6bd/g' package/lean/rblibtorrent/Makefile
+sed -i 's/*.so/libtorrent-rasterbar.so/g' package/lean/rblibtorrent/Makefile
 
 # add Adguardhome
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-adguardhome package/lean/luci-app-adguardhome
-#svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/AdGuardHome package/lean/AdGuardHome
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/lean/luci-app-adguardhome
+#svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/lean/adguardhome
+#svn co https://github.com/immortalwrt/packages/trunk/lang/node-yarn package/lean/node-yarn
+#svn co https://github.com/immortalwrt/packages/trunk/devel/packr package/lean/packr
+
+# add filebrowser
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
+#svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/lean/filebrowser
+
+# add gowebdav
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
+#svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/lean/gowebdav
 
 # set ARM to aarch64_generic
 rm -rf target/linux/armvirt/64/target.mk
@@ -60,9 +80,6 @@ mv target.mk target/linux/armvirt/64/
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-
-# add passwall
-sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 
 # add diskman
 rm -rf package/lean/luci-app-diskman
@@ -78,10 +95,6 @@ mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/l
 # add koolproxyR
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
-
-# add gowebdav
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/luci-app-gowebdav package/lean/luci-app-gowebdav
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package/ctcgfw/gowebdav package/lean/gowebdav
 
 # add serverchan
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
