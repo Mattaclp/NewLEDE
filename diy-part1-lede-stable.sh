@@ -120,4 +120,4 @@ popd
 # echo "src-git openclash https://github.com/vernesong/OpenClash;master" >> feeds.conf.default
 
 # Add clash
-# git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
+git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
