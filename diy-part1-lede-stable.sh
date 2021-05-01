@@ -19,14 +19,14 @@ rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/le
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 
 # add passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
 
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
 # Add immortalwrt packages
-sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
-sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+#sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
+#sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
@@ -102,14 +102,14 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
-git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
-git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
+#git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
+#git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
 
 # Add po2lmo
-git clone https://github.com/openwrt-dev/po2lmo.git
-pushd po2lmo
-make && sudo make install
-popd
+#git clone https://github.com/openwrt-dev/po2lmo.git
+#pushd po2lmo
+#make && sudo make install
+#popd
 
 # Add Beginner-Go packages
 #svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-webrestriction package/lean/luci-app-control-webrestriction
@@ -120,4 +120,4 @@ popd
 # echo "src-git openclash https://github.com/vernesong/OpenClash;master" >> feeds.conf.default
 
 # Add clash
-#git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
+git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
