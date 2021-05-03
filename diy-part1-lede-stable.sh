@@ -8,8 +8,10 @@
 # Blog: https://p3terx.com
 #=============================================================
 
+git checkout ffc942671ff241753c67d20b86979090b233d5a9
+
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # change v2ray-server
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-v2ray-server
