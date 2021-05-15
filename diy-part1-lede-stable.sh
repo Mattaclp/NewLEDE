@@ -30,6 +30,7 @@ rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/le
 # Add immortalwrt packages
 sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
 sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package package/immortalwrt/
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
