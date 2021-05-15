@@ -9,7 +9,7 @@
 #=============================================================
 
 # back to 4.19.123
-git checkout ffc942671ff241753c67d20b86979090b233d5a9
+#git checkout ffc942671ff241753c67d20b86979090b233d5a9
 
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
