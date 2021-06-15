@@ -9,10 +9,13 @@
 #=============================================================
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # add passwall
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+
+# add helloworld
+git clone https://github.com/fw876/helloworld.git package/helloworld
 
 # add passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
