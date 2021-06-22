@@ -80,9 +80,13 @@ rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
-rm -rf /include/kernel-version.mk
+# set kernel-version
+rm -rf include/kernel-version.mk
 wget https://github.com/chiwaicw/lede/raw/master/include/kernel-version.mk
 mv kernel-version.mk include/
+rm -rf target/linux/bcm27xx/patches-5.4/950-0280-hid-usb-Add-device-quirks-for-Freeway-Airmouse-T3-an.patch
+wget https://github.com/chiwaicw/lede/raw/72d1f780aaebe6a00b033ee4be0ba485c6bdd245/target/linux/bcm27xx/patches-5.4/950-0280-hid-usb-Add-device-quirks-for-Freeway-Airmouse-T3-an.patch
+mv 950-0280-hid-usb-Add-device-quirks-for-Freeway-Airmouse-T3-an.patch target/linux/bcm27xx/patches-5.4/
 
 # change Xray-core
 #sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' feeds/helloworld/xray/Makefile
