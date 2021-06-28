@@ -99,7 +99,8 @@ mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/l
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/parted package/lean/parted
 
 # add koolproxyR
-git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+#git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+git clone https://github.com/Jason6111/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # add serverchan
