@@ -19,18 +19,18 @@ on:
       - main
     paths:
       - '.config'
-#  schedule:
-#    - cron: 38 00 * * *
+  schedule:
+    - cron: 09 11 * * *
 #  watch:
 #    types: started
 
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/chiwaicw/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: N1fullF.config
-  DIY_P1_SH: diy-part1-127.sh
+  DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: false
