@@ -102,7 +102,7 @@ mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/l
 
 # add koolproxyR
 #git clone https://github.com/Beginner-Go/luci-app-koolproxyR
-git clone https://github.com/Jason6111/luci-app-koolproxyR
+git clone https://github.com/chiwaicw/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # add serverchan
