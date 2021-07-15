@@ -19,14 +19,14 @@ on:
       - main
     paths:
       - '.config'
-#  schedule:
-#    - cron: 49 02 * * *
+  schedule:
+    - cron: 59 11 * * *
 #  watch:
 #    types: started
 
 
 env:
-  REPO_URL: https://github.com/chiwaicw/lede
+  REPO_URL: https://github.com/yoyi412/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: x86Fullopenclash.config
