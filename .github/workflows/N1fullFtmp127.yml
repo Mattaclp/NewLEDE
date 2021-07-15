@@ -20,13 +20,13 @@ on:
     paths:
       - '.config'
   schedule:
-    - cron: 58 11 * * *
+    - cron: 01 18 * * *
 #  watch:
 #    types: started
 
 
 env:
-  REPO_URL: https://github.com/yoyi412/lede
+  REPO_URL: https://github.com/chiwaicw/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: N1fullF.config
