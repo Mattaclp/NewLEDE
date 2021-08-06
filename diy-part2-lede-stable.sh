@@ -15,18 +15,18 @@ sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_gener
 sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 
 # change Lean packages
-rm -rf feeds/packages/lang/golang
-svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang feeds/packages/lang/golang
-rm -rf feeds/packages/utils/containerd
-svn co https://github.com/coolsnowwolf/packages/trunk/utils/containerd feeds/packages/utils/containerd
-rm -rf feeds/packages/utils/libnetwork
-svn co https://github.com/coolsnowwolf/packages/trunk/utils/libnetwork feeds/packages/utils/libnetwork
-rm -rf feeds/packages/utils/runc
-svn co https://github.com/coolsnowwolf/packages/trunk/utils/runc feeds/packages/utils/runc
-rm -rf feeds/packages/utils/docker-ce
-svn co https://github.com/coolsnowwolf/packages/trunk/utils/docker-ce feeds/packages/utils/docker-ce
-rm -rf package/lean/luci-app-docker
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-docker package/lean/luci-app-docker
+#rm -rf feeds/packages/lang/golang
+#svn co https://github.com/coolsnowwolf/packages/trunk/lang/golang feeds/packages/lang/golang
+#rm -rf feeds/packages/utils/containerd
+#svn co https://github.com/coolsnowwolf/packages/trunk/utils/containerd feeds/packages/utils/containerd
+#rm -rf feeds/packages/utils/libnetwork
+#svn co https://github.com/coolsnowwolf/packages/trunk/utils/libnetwork feeds/packages/utils/libnetwork
+#rm -rf feeds/packages/utils/runc
+#svn co https://github.com/coolsnowwolf/packages/trunk/utils/runc feeds/packages/utils/runc
+#rm -rf feeds/packages/utils/docker-ce
+#svn co https://github.com/coolsnowwolf/packages/trunk/utils/docker-ce feeds/packages/utils/docker-ce
+#rm -rf package/lean/luci-app-docker
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-docker package/lean/luci-app-docker
 
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
 #sed -i '/uci commit system/i\uci set system.@system[0].hostname='LEUNG'' package/lean/default-settings/files/zzz-default-settings
