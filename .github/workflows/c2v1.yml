@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: C2v1
+name: c2v1
 
 on:
   repository_dispatch:
@@ -19,8 +19,8 @@ on:
       - main
     paths:
       - '.config'
-#  schedule:
-#    - cron: 01 22 * * *
+  schedule:
+    - cron: 10 01 * * *
 #  watch:
 #    types: started
 
