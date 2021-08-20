@@ -46,7 +46,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
 
 # add DDNSTO
-sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
+#sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
 
 # change qBittorrent 4.2.5
 rm -rf package/lean/qBittorrent
