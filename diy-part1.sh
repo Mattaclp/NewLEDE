@@ -24,8 +24,10 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
 # Add immortalwrt packages
-sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
-sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
+#sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
+#sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
+git clone https://github.com/immortalwrt/packages.git;openwrt-18.06 package/projectpackages
+git clone https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4 package/projectluci
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
