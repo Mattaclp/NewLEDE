@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 11 05 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
