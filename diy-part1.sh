@@ -26,8 +26,12 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
 # Add immortalwrt packages
 #sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
 #sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
-git clone https://github.com/immortalwrt/packages.git;openwrt-18.06 package/projectpackages
-git clone https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4 package/projectluci
+svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/filebrowser
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/luci-app-filebrowser
+svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/adguardhome
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/gowebdav
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/luci-app-gowebdav
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
