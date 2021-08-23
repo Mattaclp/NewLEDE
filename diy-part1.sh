@@ -32,6 +32,7 @@ svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/adg
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/luci-app-adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/gowebdav
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/luci-app-gowebdav
+svn co https://github.com/immortalwrt/packages/trunk/lang/golang package/golang
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
