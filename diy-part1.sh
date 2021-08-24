@@ -28,8 +28,8 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
 #sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
 svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/filebrowser
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/luci-app-filebrowser
-svn co https://github.com/immortalwrt/packages/trunk/net/adguardhome package/adguardhome
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/liuran001/openwrt-packages/trunk/packages/luci-app-adguardhome package/luci-app-adguardhome
+svn co https://github.com/liuran001/openwrt-packages/trunk/packages/adguardhome package/adguardhome
 svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/gowebdav
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/luci-app-gowebdav
 svn co https://github.com/immortalwrt/packages/trunk/lang/golang package/golang
