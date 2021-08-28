@@ -28,8 +28,12 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
 #sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
 #sed -i '$a src-git packagesImmortalWrt https://github.com/kwokwai6618/packages-ImmortalWrt.git;openwrt-18.06' feeds.conf.default
 #sed -i '$a src-git luciImmortalWrt https://github.com/kwokwai6618/luci-ImmortalWrt.git;openwrt-18.06' feeds.conf.default
-sed -i '$a src-git immortalwrtpackages https://github.com/Mattaclp/immortalwrtpackages' feeds.conf.default
-sed -i '$a src-git immortalwrtluci https://github.com/Mattaclp/immortalwrtluci' feeds.conf.default
+#sed -i '$a src-git immortalwrtpackages https://github.com/Mattaclp/immortalwrtpackages' feeds.conf.default
+#sed -i '$a src-git immortalwrtluci https://github.com/Mattaclp/immortalwrtluci' feeds.conf.default
+sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
+sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
+svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome package/AdGuardHome
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 #svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/filebrowser
 #svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/luci-app-filebrowser
 #svn co https://github.com/liuran001/openwrt-packages/trunk/packages/luci-app-adguardhome package/luci-app-adguardhome
