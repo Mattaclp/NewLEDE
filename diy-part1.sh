@@ -123,7 +123,7 @@ git clone https://github.com/chiwaicw/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # add serverchan
-git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
+#git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
 
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
