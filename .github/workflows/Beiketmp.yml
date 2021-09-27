@@ -20,7 +20,7 @@ on:
     paths:
       - '.config'
   schedule:
-    - cron: 57 01 * * *
+    - cron: 15 11 * * *
 #  watch:
 #    types: started
 
