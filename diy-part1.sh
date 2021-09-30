@@ -131,6 +131,10 @@ mv luci-app-koolproxyR package/lean/
 git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
 git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
 
+#添加smartdns
+git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+
 # Add po2lmo
 git clone https://github.com/openwrt-dev/po2lmo.git
 pushd po2lmo
