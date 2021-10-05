@@ -19,9 +19,9 @@
 git clone https://github.com/fw876/helloworld.git package/helloworld
 
 # add passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
-git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
-#git clone https://github.com/chiwaicw/openwrt-passwall.git package/diy1
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
+#git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+git clone https://github.com/chiwaicw/openwrt-passwall.git package/diy1
 
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
