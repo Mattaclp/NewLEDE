@@ -48,6 +48,12 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome pa
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
 
+# add aliyundrive
+git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
+rm -rf package/lean/aliyundrive-webdav && mv go-aliyundrive-webdav package/lean/
+git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
+rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
+
 # add argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 mv luci-app-argon-config package/lean/
