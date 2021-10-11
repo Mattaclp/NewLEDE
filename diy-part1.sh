@@ -26,6 +26,9 @@ git clone https://github.com/chiwaicw/openwrt-passwall.git package/diy1
 # add luci-app-cpufreq
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 
+# Add luci-app-amlogic
+svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
