@@ -16,11 +16,12 @@
 #sed -i '$a src-git upx https://github.com/kuoruan/openwrt-upx.git' feeds.conf.default
 
 # add helloworld
-git clone https://github.com/fw876/helloworld.git package/helloworld
+#git clone https://github.com/fw876/helloworld.git package/helloworld
+git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
-git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/diy1
+#git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 #git clone https://github.com/chiwaicw/openwrt-passwall.git package/diy1
 
 # add luci-app-cpufreq
