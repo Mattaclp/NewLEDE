@@ -116,9 +116,9 @@ wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
 # set x86 DEFAULT_PACKAGES
-rm -rf target/linux/x86/Makefile
-git clone https://github.com/Mattaclp/x86DEFAULT_PACKAGES.git
-mv x86DEFAULT_PACKAGES/Makefile target/linux/x86/
+#rm -rf target/linux/x86/Makefile
+#git clone https://github.com/Mattaclp/x86DEFAULT_PACKAGES.git
+#mv x86DEFAULT_PACKAGES/Makefile target/linux/x86/
 
 # change Xray-core
 #sed -i 's/PKG_VERSION:=1.2.4/PKG_VERSION:=1.3.0/g' feeds/helloworld/xray/Makefile
