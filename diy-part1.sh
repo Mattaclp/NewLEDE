@@ -56,10 +56,10 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
 
 # add aliyundrive
-git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
-rm -rf package/lean/aliyundrive-webdav && mv go-aliyundrive-webdav package/lean/
-git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
-rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
+#git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
+#rm -rf package/lean/aliyundrive-webdav && mv go-aliyundrive-webdav package/lean/
+#git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
+#rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
 
 # add argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
@@ -79,13 +79,13 @@ rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/
 #sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
 
 # change qBittorrent 4.2.5
-rm -rf package/lean/qBittorrent
-svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qBittorrent package/lean/qBittorrent
-rm -rf package/lean/rblibtorrent
-svn co https://github.com/kwokwai6618/lede/trunk/package/lean/rblibtorrent package/lean/rblibtorrent
-svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qt5 package/lean/qt5
-rm -rf package/lean/luci-app-qbittorrent
-svn co https://github.com/kwokwai6618/lede/trunk/package/lean/luci-app-qbittorrent package/lean/luci-app-qbittorrent
+#rm -rf package/lean/qBittorrent
+#svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qBittorrent package/lean/qBittorrent
+#rm -rf package/lean/rblibtorrent
+#svn co https://github.com/kwokwai6618/lede/trunk/package/lean/rblibtorrent package/lean/rblibtorrent
+#svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qt5 package/lean/qt5
+#rm -rf package/lean/luci-app-qbittorrent
+#svn co https://github.com/kwokwai6618/lede/trunk/package/lean/luci-app-qbittorrent package/lean/luci-app-qbittorrent
 
 # change qBittorrent 4.2.5
 #sed -i 's/8f615aa06f77286881d40b5f769f648221128b46f0bffc1f2fa101068f99ebe8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
