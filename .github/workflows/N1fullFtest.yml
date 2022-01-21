@@ -6,7 +6,7 @@
 # https://github.com/P3TERX
 #===============================================
 
-name: ARMv8_Plus OpenWrt
+name: N1fullFtest
 
 on:
   repository_dispatch:
