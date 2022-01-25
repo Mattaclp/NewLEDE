@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: N1fullFtest2
+name: N1fullFReleases
 
 on:
   repository_dispatch:
@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 30 17 * * *
-  watch:
-    types: started
+#  watch:
+#    types: started
 
 
 env:
