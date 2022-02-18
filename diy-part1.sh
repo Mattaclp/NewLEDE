@@ -52,8 +52,8 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome pa
 #svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-gowebdav package/luci-app-gowebdav
 
 # add argon theme
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
+#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+#rm -rf package/lean/luci-theme-argon && mv luci-theme-argon package/lean/
 
 # add aliyundrive
 #git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
@@ -72,8 +72,8 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 
 # add JD
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+#rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
 
 # add DDNSTO
 #sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' feeds.conf.default
