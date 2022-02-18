@@ -11,6 +11,13 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
+# 移除重复软件包
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/applications/luci-app-jd-dailybonus
+
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
+
 # Modify Default Theme
 sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 
