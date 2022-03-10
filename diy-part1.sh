@@ -73,7 +73,8 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 
 # add JD
-#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+mv luci-app-jd-dailybonus package/lean/
 #rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
 
 # add DDNSTO
