@@ -59,7 +59,8 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome pa
 # add aliyundrive
 #git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 #rm -rf package/lean/aliyundrive-webdav && mv go-aliyundrive-webdav package/lean/
-#git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
+git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
+mv luci-app-go-aliyundrive-webdav package/lean/
 #rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
 
 # add argon-config
