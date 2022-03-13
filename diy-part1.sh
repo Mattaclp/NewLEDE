@@ -73,11 +73,11 @@ mv lua-maxminddb package/lean/
 git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 
-# add luci-app-casaos
-git clone https://github.com/chiwaicw/luci-app-casaos.git
-mv luci-app-casaos package/lean/
-git clone https://github.com/chiwaicw/casaos.git
-mv casaos package/lean/
+# add luci-app-casaJJJos
+#git clone https://github.com/chiwaicw/luci-app-casaJJJos.git
+#mv luci-app-casaJJJos package/lean/
+#git clone https://github.com/chiwaicw/casaJJJos.git
+#mv casaJJJos package/lean/
 
 # add JD
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
