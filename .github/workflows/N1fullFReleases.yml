@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 30 17 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
@@ -160,7 +160,7 @@ jobs:
         OPENWRT_ARMVIRT: openwrt/bin/targets/*/*/*.tar.gz
         PACKAGE_SOC: s905d
         KERNEL_REPO_URL: https://github.com/ophub/kernel/tree/main/pub/stable
-        KERNEL_VERSION_NAME: 5.4.163
+        KERNEL_VERSION_NAME: 5.4.183_5.16.13
         KERNEL_AUTO_LATEST: true
         GZIP_IMGS: .gz
 
