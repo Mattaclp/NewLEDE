@@ -91,53 +91,19 @@ jobs:
       with:
         path: ${{ env.PACKAGED_OUTPUTPATH }}/
 
-    - name: Upload OpenWrt Firmware to Release
-      id: release
+    - name: Upload openwrt to release
       uses: ncipollo/release-action@v1
-      if: env.PACKAGED_STATUS == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      if: env.PACKAGED_STATUS == 'success' && !cancelled()
       with:
-        name: R${{ env.DATE }} for ${{ env.FILE_NAME }}
+        name: R${{ env.DATE }} for ${{ env.PRODUCT_NAME }}
+        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
         allowUpdates: true
         removeArtifacts: true
-        tag: ${{ env.FILE_NAME }}
-        commit: main
-        token: ${{ secrets.RELEASES_TOKEN }}
-        artifacts: ${{ env.PACKAGED_OUTPUTPATH }}/*
-        body: |
-          - 默认IP：192.168.1.253 默认密码：password (WiFi密码同）
-          - 当前使用版本:【编译前的最后一次➦[主源码](https://github.com/coolsnowwolf/lede)更新记录】
-          - 高大全版取消了node，目前仅[网易云解锁](https://github.com/breakings/OpenWrt/releases/download/openwrt_armvirt/netease.tar.gz)[NodeJS](https://github.com/breakings/OpenWrt/releases/download/openwrt_armvirt/node_v14.19.0-1_aarch64_cortex-a53.ipk)版受影响，可单独下载ipk安装。
-          - 此版仍然**精简**了部分F大本人集成的插件，故依旧推荐使用F大本人发布的➦[正式版本](https://github.com/breakings/OpenWrt/releases/tag/flippy_openwrt)。
-          - 此版仅满足部分喜欢追新的群友方便在线更新固件使用。
-          - 此版因集成插件比自用精简版更多，无法做到每日更新。
-          - 因变动较大，从60或以下版本升级到61或更高版本建议**全新刷入**或者**不保留配置**进行升级。
-          - 常见问题及注意事项请参考恩山F大➦[最新帖](https://www.right.com.cn/forum/thread-4076037-1-1.html)
-          - 需要**自用精简版**请到 精简版➦[下载](https://github.com/breakings/OpenWrt/releases/tag/armv8_mini)
-          ${{ env.useVersionInfo }}
-    - name: Delete workflow runs
-      uses: GitRML/delete-workflow-runs@main
-      with:
+        tag: ${{ env.PRODUCT_NAME }}
         token: ${{ secrets.GITHUB_TOKEN }}
-        repository: ${{ github.repository }}
-        retain_days: 60
-        keep_minimum_runs: 60
-
-    - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.0
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      with:
-        repo:
-        keep_latest: 30
-        delete_tag_pattern:
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Telegram notification
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: |
-          打包时间：${{ env.DATE }}
-          ${{ env.PRODUCT_NAME }} 打包完成
+        body: |
+          **This is OpenWrt firmware for Armvirt 64**
+          * 这是 ARMv8 多功能版，集成插件多适合折腾
+          默认 IP：192.168.1.253 默认密码：password
+          当前使用版本:【编译前的最后一次➦[主源码](https://github.com/coolsnowwolf/lede)更新记录】
+          ${{ env.useVersionInfo }}
