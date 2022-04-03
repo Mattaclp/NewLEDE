@@ -45,8 +45,10 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 #sed -i '$a src-git immortalwrtluci https://github.com/Mattaclp/immortalwrtluci' feeds.conf.default
 sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
 sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
-svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome package/AdGuardHome
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
+mv luci-app-adguardhome package/lean/
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/adguardhome package/AdGuardHome
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-adguardhome package/luci-app-adguardhome
 #svn co https://github.com/immortalwrt/packages/trunk/utils/filebrowser package/filebrowser
 #svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-filebrowser package/luci-app-filebrowser
 #svn co https://github.com/liuran001/openwrt-packages/trunk/packages/luci-app-adguardhome package/luci-app-adguardhome
