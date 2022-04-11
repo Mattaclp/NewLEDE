@@ -11,6 +11,9 @@
 # Modify default IP
 sed -i 's/10.10.10.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
+# Modify default password boos to password
+sed -i 's/$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7:::/:0:0:99999:7:::/g' package/base-files/files/etc/shadow
+
 # 移除重复软件包
 rm -rf feeds/luci/themes/luci-theme-argon
 #rm -rf feeds/luci/applications/luci-app-jd-dailybonus
