@@ -9,11 +9,8 @@
 #=============================================================
 
 # add back ax6
-git checkout fbd027c5dadd179ab520f54df8d34a402aee22d0
+git reset --hard fbd027c5dadd179ab520f54df8d34a402aee22d0
 git revert -n edbd8d2e9839357f3a4f0a06174d243f362b1544
-git reset --hard
-git reset --hard 6f4e5befda024dc4c061fa6b1f2d9b010ad0edcc
-git checkout master
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
