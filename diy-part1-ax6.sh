@@ -9,7 +9,8 @@
 #=============================================================
 
 # add back ax6
-git reset --hard fbd027c5dadd179ab520f54df8d34a402aee22d0
+#git reset --hard fbd027c5dadd179ab520f54df8d34a402aee22d0
+git reset --hard 72a2df6a8123f2a9580e3504905a3c450857d372
 git revert -n edbd8d2e9839357f3a4f0a06174d243f362b1544
 
 # Uncomment a feed source
