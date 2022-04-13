@@ -25,6 +25,9 @@ git revert -n edbd8d2e9839357f3a4f0a06174d243f362b1544
 git clone https://github.com/fw876/helloworld.git package/helloworld
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
+# add bypass
+svn co https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass package/luci-app-bypass
+
 # add passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
