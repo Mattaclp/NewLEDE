@@ -28,6 +28,9 @@ git clone https://github.com/fw876/helloworld.git package/helloworld
 # add bypass
 svn co https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass package/luci-app-bypass
 
+# add overwall
+git clone https://github.com/FreeJ233/luci-app-overwall.git package/luci-app-overwall
+
 # add passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
