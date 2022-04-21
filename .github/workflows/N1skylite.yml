@@ -17,12 +17,12 @@ on:
   push:
     branches:
       - main
-#    paths:
-#      - '.config'
+    paths:
+      - '.config'
 #  schedule:
 #    - cron: 30 17 * * *
-  watch:
-    types: started
+#  watch:
+#    types: started
 
 
 env:
