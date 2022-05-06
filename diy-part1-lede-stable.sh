@@ -31,9 +31,9 @@ rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/le
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
 # Add immortalwrt packages
-sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
-sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
-svn co https://github.com/immortalwrt/immortalwrt/trunk/package package/immortalwrt/
+#sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
+#sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
+#svn co https://github.com/immortalwrt/immortalwrt/trunk/package package/immortalwrt/
 
 # add argon theme
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
