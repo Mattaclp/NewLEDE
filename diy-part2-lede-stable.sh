@@ -32,6 +32,8 @@ svn co https://github.com/coolsnowwolf/packages/trunk/utils/lvm2 feeds/packages/
 rm -rf package/network/utils/iproute2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/iproute2 package/network/utils/iproute2
 
+rm -rf feeds/immortalwrtluci/themes/luci-theme-argon*
+
 # 修改主机名字，把OpenWrt-123修改你喜欢的就行（不能纯数字或者使用中文）
 #sed -i '/uci commit system/i\uci set system.@system[0].hostname='LEUNG'' package/lean/default-settings/files/zzz-default-settings
 
