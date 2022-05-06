@@ -15,7 +15,7 @@
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # change v2ray-server
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-v2ray-server
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-v2ray-server
 rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/lean/
 
 # add passwall
@@ -28,8 +28,8 @@ rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/le
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
 # Add immortalwrt packages
-sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
-sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
+sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package package/immortalwrt/
 
 # add argon theme
