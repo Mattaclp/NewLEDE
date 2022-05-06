@@ -12,7 +12,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # add NanoHatOLED for Neo2
-sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
+#sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
 
 # add passwall
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
