@@ -123,6 +123,16 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 # Add openclash
 # echo "src-git openclash https://github.com/vernesong/OpenClash;master" >> feeds.conf.default
 
+# Add openclash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
+
+# Add po2lmo
+git clone https://github.com/openwrt-dev/po2lmo.git
+pushd po2lmo
+make && sudo make install
+popd
+
+
 # Add clash
 git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
 
