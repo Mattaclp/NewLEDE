@@ -14,6 +14,9 @@
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# add NanoHatOLED for Neo2
+sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
+
 # change v2ray-server
 svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-v2ray-server
 rm -rf package/lean/luci-app-v2ray-server && mv luci-app-v2ray-server package/lean/
