@@ -134,7 +134,7 @@ popd
 
 
 # Add clash
-git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
+#git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
 
 # sed -i 's/KERNEL_PATCHVER:=4.14/KERNEL_PATCHVER:=4.19/g' ./target/linux/ipq40xx/Makefile
 # sed -i 's/KERNEL_TESTING_PATCHVER:=4.14/KERNEL_TESTING_PATCHVER:=4.19/g' ./target/linux/ipq40xx/Makefile
