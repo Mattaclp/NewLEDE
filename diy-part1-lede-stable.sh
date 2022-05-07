@@ -11,6 +11,11 @@
 # back to 4.19.123
 #git checkout ffc942671ff241753c67d20b86979090b233d5a9
 
+svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/bpftools package/network/utils/bpftools
+
+wget https://github.com/coolsnowwolf/lede/raw/master/include/bpf.mk
+mv bpf.mk include/
+
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
