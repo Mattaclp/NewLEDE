@@ -127,14 +127,20 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 # echo "src-git openclash https://github.com/vernesong/OpenClash;master" >> feeds.conf.default
 
 # Add openclash
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
+# svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
 
 # Add po2lmo
-git clone https://github.com/openwrt-dev/po2lmo.git
-pushd po2lmo
+# git clone https://github.com/openwrt-dev/po2lmo.git
+# pushd po2lmo
+# make && sudo make install
+# popd
+
+# 科学上网插件依赖
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+# 编译 po2lmo (如果有po2lmo可跳过)
+pushd package/luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
-
 
 # Add clash
 #git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
