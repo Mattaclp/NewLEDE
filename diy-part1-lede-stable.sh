@@ -141,11 +141,11 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-ap
 # popd
 
 # 科学上网插件依赖
-svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+# svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 # 编译 po2lmo (如果有po2lmo可跳过)
-pushd package/luci-app-openclash/tools/po2lmo
-make && sudo make install
-popd
+# pushd package/luci-app-openclash/tools/po2lmo
+# make && sudo make install
+# popd
 
 # Add clash
 #git clone -b master https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash
