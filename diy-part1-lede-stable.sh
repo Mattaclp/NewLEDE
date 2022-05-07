@@ -50,9 +50,12 @@ mv luci-app-argon-config package/lean/
 
 # add vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git
-mv lua-maxminddb package/lean/
+mv lua-maxminddb package/
 git clone https://github.com/jerrykuku/luci-app-vssr.git
-mv luci-app-vssr package/lean/
+mv luci-app-vssr package/
+
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+git clone --depth=1 -b luci https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 
 # add JD
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
