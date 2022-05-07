@@ -14,6 +14,8 @@
 # add NanoHatOLED for Neo2
 #sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
 
+svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/bpftools package/network/utils/bpftools
+
 # add passwall
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 #sed -i '$a src-git upx https://github.com/kuoruan/openwrt-upx.git' feeds.conf.default
