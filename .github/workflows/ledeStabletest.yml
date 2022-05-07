@@ -34,7 +34,7 @@ env:
   #REPO_BRANCH: master
   #REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: N1skylite.config
+  CONFIG_FILE: ledeStable.config
   DIY_P1_SH: diy-part1-lede-stable.sh
   DIY_P2_SH: diy-part2-lede-stable.sh
   UPLOAD_BIN_DIR: true
