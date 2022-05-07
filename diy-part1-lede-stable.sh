@@ -49,10 +49,10 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 mv luci-app-argon-config package/lean/
 
 # add vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git
-mv lua-maxminddb package/lean/
-git clone https://github.com/jerrykuku/luci-app-vssr.git
-mv luci-app-vssr package/lean/
+# git clone https://github.com/jerrykuku/lua-maxminddb.git
+# mv lua-maxminddb package/lean/
+# git clone https://github.com/jerrykuku/luci-app-vssr.git
+# mv luci-app-vssr package/lean/
 
 # add JD
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
