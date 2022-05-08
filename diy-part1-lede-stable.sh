@@ -9,7 +9,7 @@
 #=============================================================
 
 # back to 4.19.123
-git checkout ffc942671ff241753c67d20b86979090b233d5a9
+#git checkout ffc942671ff241753c67d20b86979090b233d5a9
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/bpftools package/network/utils/bpftools
 
