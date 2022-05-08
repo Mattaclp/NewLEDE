@@ -27,11 +27,12 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/openwrt
+  #REPO_URL: https://github.com/coolsnowwolf/openwrt
+  REPO_URL: https://github.com/Mattaclp/lede414
   #REPO_URL: https://github.com/coolsnowwolf/lede
   #REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: lede-17.01
-  #REPO_BRANCH: master
+  #REPO_BRANCH: lede-17.01
+  REPO_BRANCH: master
   #REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: N1skylite.config
