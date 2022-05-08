@@ -9,7 +9,7 @@
 #============================================================
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
 # Modify Default Theme
 sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
