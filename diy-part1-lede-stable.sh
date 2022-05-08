@@ -49,10 +49,10 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git
 mv luci-app-argon-config package/lean/
 
 # add vssr
-# git clone https://github.com/jerrykuku/lua-maxminddb.git
-# mv lua-maxminddb package/
-# git clone https://github.com/jerrykuku/luci-app-vssr.git
-# mv luci-app-vssr package/
+git clone https://github.com/jerrykuku/lua-maxminddb.git
+mv lua-maxminddb package/
+git clone https://github.com/jerrykuku/luci-app-vssr.git
+mv luci-app-vssr package/
 
 echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci' >>feeds.conf.default
