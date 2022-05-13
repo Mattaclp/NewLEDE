@@ -11,6 +11,13 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.10.222/g' package/base-files/files/bin/config_generate
 
+rm -rf feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/bakebit_nanohat_oled.py
+wget -O Zpix.ttf https://github.com/vinewx/NanoHatOLED/raw/weather/nanohatoled/files/NanoHatOLED/Zpix.ttf
+wget -O bakebit_nanohat_oled.py https://github.com/vinewx/NanoHatOLED/raw/weather/nanohatoled/files/NanoHatOLED/bakebit_nanohat_oled.py
+sed -i 's/101010100/101210401/g' bakebit_nanohat_oled.py
+mv Zpix.ttf feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/
+mv bakebit_nanohat_oled.py feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/
+
 # 移除重复软件包
 rm -rf feeds/luci/themes/luci-theme-argon
 #rm -rf feeds/luci/applications/luci-app-jd-dailybonus
