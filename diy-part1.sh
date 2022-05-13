@@ -13,6 +13,9 @@
 
 # add NanoHatOLED for Neo2
 #sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
+sed -i '$a src-git NanoHatOLED https://github.com/ctr54188/NanoHatOLED.git' feeds.conf.default
+wget https://github.com/ctr54188/NanoHatOLED/raw/master/openwrt/target/linux/sunxi/patches-5.4/499-neo2-enable-i2c.patch
+mv 499-neo2-enable-i2c.patch target/linux/sunxi/patches-5.4/
 
 # add passwall
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
