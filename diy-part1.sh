@@ -12,9 +12,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # add NanoHatOLED for Neo2
-#sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
-sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git^547ec7e5d69455f000ba1987189999a3bee0b83f' feeds.conf.default
-#sed -i '$a src-git NanoHatOLED https://github.com/ctr54188/NanoHatOLED.git' feeds.conf.default
+sed -i '$a src-git NanoHatOLED https://github.com/ctr54188/NanoHatOLED.git' feeds.conf.default
 wget https://github.com/ctr54188/NanoHatOLED/raw/master/openwrt/target/linux/sunxi/patches-5.4/499-neo2-enable-i2c.patch
 mv 499-neo2-enable-i2c.patch target/linux/sunxi/patches-5.4/
 
