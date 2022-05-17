@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86Full
+name: x86Fullopenclash
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
     paths:
       - '.config'
 #  schedule:
-#    - cron: 01 17 * * *
+#    - cron: 01 19 * * *
   watch:
     types: started
 
@@ -38,7 +38,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
-  
+
 jobs:
   build:
     runs-on: ubuntu-18.04
