@@ -1,10 +1,24 @@
+#
+# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/P3TERX/Actions-OpenWrt
+# Description: Build OpenWrt using GitHub Actions
+#
 
-name: x86Full_checkcpu
+name: x86PVE
 
 on:
   repository_dispatch:
-  workflow_dispatch:
-  
+  release:
+    types: published
+  push:
+    branches:
+      - main
+    paths:
+      - '.config'
 #  schedule:
 #    - cron: 01 19 * * *
   watch:
@@ -15,7 +29,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: x86Fullopenclash.config
+  CONFIG_FILE: x86PVE.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -32,8 +46,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      
-   - name: 检查服务器配置
+
+    - name: 检查服务器配置
       run: |
         echo "警告⚠"
         echo "若分配的服务器性能不足，务必及时取消，重新运行！"
@@ -69,14 +83,7 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-
-    - name: 编译工具链缓存
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'false'
-        prefix: ${{ github.workspace }}/openwrt
-
-- name: Load custom feeds
+    - name: Load custom feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
