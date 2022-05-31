@@ -11,6 +11,10 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 
+# Add shadowsocks-rust 1.15.0-alpha.4
+rm -rf feeds/helloworld/shadowsocks-rust
+svn co  https://github.com/Mattaclp/NewLEDE/trunk/shadowsocks-rust feeds/helloworld/shadowsocks-rust
+
 # Add NanoHatOLED weather support (tested not work, need to fix)
 #rm -rf feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/bakebit_nanohat_oled.py
 #wget -O Zpix.ttf https://github.com/vinewx/NanoHatOLED/raw/weather/nanohatoled/files/NanoHatOLED/Zpix.ttf
