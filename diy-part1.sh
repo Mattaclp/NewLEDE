@@ -27,7 +27,7 @@ git clone https://github.com/fw876/helloworld.git package/helloworld
 # add passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
-svn co https://github.com/Gzxhwq/openwrt-passwall/trunk/luci-app-passwall package/openwrt-passwall/luci-app-passwall
+svn co https://github.com/Gzxhwq/openwrt-passwall/branches/luci-me/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 
 # add luci-app-cpufreq
