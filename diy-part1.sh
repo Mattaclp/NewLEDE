@@ -43,8 +43,6 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 #sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
 #sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
 svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/net/gowebdav package/lean/gowebdav
-svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/utils/filebrowser package/lean/filebrowser
-svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
 svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
 svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/lang/golang package/golang
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
