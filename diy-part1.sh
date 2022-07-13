@@ -70,8 +70,8 @@ mv luci-app-adguardhome package/lean/
 # add aliyundrive
 #git clone https://github.com/jerrykuku/go-aliyundrive-webdav.git
 #rm -rf package/lean/aliyundrive-webdav && mv go-aliyundrive-webdav package/lean/
-git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
-mv luci-app-go-aliyundrive-webdav package/lean/
+#git clone https://github.com/jerrykuku/luci-app-go-aliyundrive-webdav.git
+#mv luci-app-go-aliyundrive-webdav package/lean/
 #rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
 
 # add argon-config
@@ -91,8 +91,8 @@ mv luci-app-vssr package/lean/
 #mv casaJJJos package/lean/
 
 # add JD
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-mv luci-app-jd-dailybonus package/lean/
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+#mv luci-app-jd-dailybonus package/lean/
 #rm -rf package/lean/luci-app-jd-dailybonus && mv luci-app-jd-dailybonus package/lean/
 
 # add DDNSTO
@@ -148,11 +148,11 @@ mv target.mk target/linux/armvirt/64/
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 # add diskman
-rm -rf package/lean/luci-app-diskman
-rm -rf package/lean/parted
-svn co https://github.com/lisaac/luci-app-diskman/trunk/applications/luci-app-diskman package/lean/luci-app-diskman
-git clone https://github.com/lisaac/luci-app-diskman.git
-mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/lean/parted/Makefile
+#rm -rf package/lean/luci-app-diskman
+#rm -rf package/lean/parted
+#svn co https://github.com/lisaac/luci-app-diskman/trunk/applications/luci-app-diskman package/lean/luci-app-diskman
+#git clone https://github.com/lisaac/luci-app-diskman.git
+#mkdir -p package/lean/parted && cp -i luci-app-diskman/Parted.Makefile package/lean/parted/Makefile
 
 # add diskman
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-diskman package/lean/luci-app-diskman
@@ -171,11 +171,11 @@ mv luci-app-koolproxyR package/lean/
 
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
 #git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
-git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
+#git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
 
 #添加smartdns
-git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+#git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # Add po2lmo
 git clone https://github.com/openwrt-dev/po2lmo.git
