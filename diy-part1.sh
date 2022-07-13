@@ -46,6 +46,7 @@ svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/net/gowebdav packag
 svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/utils/filebrowser package/filebrowser
 svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-filebrowser package/luci-app-filebrowser
 svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-gowebdav package/luci-app-gowebdav
+svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/lang/golang package/golang
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 mv luci-app-adguardhome package/lean/
 #sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
