@@ -15,10 +15,6 @@ sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_gener
 rm -rf package/helloworld/shadowsocks-rust
 svn co  https://github.com/Mattaclp/NewLEDE/trunk/shadowsocks-rust package/helloworld/shadowsocks-rust
 
-# Add filebrowser
-svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/utils/filebrowser feeds/packages/utils/filebrowser
-svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-filebrowser package/lean/luci-app-filebrowser
-
 # Add NanoHatOLED weather support (tested not work, need to fix)
 #rm -rf feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/bakebit_nanohat_oled.py
 #wget -O Zpix.ttf https://github.com/vinewx/NanoHatOLED/raw/weather/nanohatoled/files/NanoHatOLED/Zpix.ttf
