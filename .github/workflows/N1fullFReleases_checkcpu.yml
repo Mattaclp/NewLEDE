@@ -21,8 +21,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 30 17 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
@@ -178,7 +178,7 @@ jobs:
         OPENWRT_ARMVIRT: lean/*/*/*rootfs.tar.gz
         PACKAGE_SOC: vplus_beikeyun_s905d_s905x3_s912
         KERNEL_REPO_URL: https://github.com/ophub/kernel/tree/main/pub/stable
-        KERNEL_VERSION_NAME: 5.15.34_5.18.5
+        KERNEL_VERSION_NAME: 5.15.34_5.19.1
         KERNEL_AUTO_LATEST: true
         GZIP_IMGS: .gz
 
