@@ -183,6 +183,9 @@ pushd po2lmo
 make && sudo make install
 popd
 
+Add UnblockNeteaseMusic
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+
 # Add Beginner-Go packages
 #svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-webrestriction package/lean/luci-app-control-webrestriction
 #svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-weburl package/lean/luci-app-control-weburl
