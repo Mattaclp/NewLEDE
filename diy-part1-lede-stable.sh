@@ -110,8 +110,8 @@ mv target.mk target/linux/armvirt/64/
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/parted package/lean/parted
 
 # add koolproxyR
-git clone https://github.com/Beginner-Go/luci-app-koolproxyR
-mv luci-app-koolproxyR package/lean/
+#git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+#mv luci-app-koolproxyR package/lean/
 
 # add serverchan
 git clone https://github.com/tty228/luci-app-serverchan.git package/lean/luci-app-serverchan
