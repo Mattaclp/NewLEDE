@@ -60,8 +60,8 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 #git clone --depth=1 -b luci https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 
 # add JD
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
-mv luci-app-jd-dailybonus package/lean/
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
+#mv luci-app-jd-dailybonus package/lean/
 
 # change qBittorrent 4.2.5
 #sed -i 's/8f615aa06f77286881d40b5f769f648221128b46f0bffc1f2fa101068f99ebe8/1dac52d6fe4b0c44dba04fcfc41f519c57a69cb30580255edca95c87053a4324/g' package/lean/qBittorrent/Makefile
