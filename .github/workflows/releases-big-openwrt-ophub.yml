@@ -69,7 +69,7 @@ jobs:
       if: (!cancelled())
       uses: ophub/flippy-openwrt-actions@main
       env:
-        OPENWRT_ARMVIRT: https://github.com/kwokwai6618/janeop/releases/download/ARMv8_PLUS/openwrt-armvirt-64-default-rootfs.tar.gz
+        OPENWRT_ARMVIRT: https://github.com/Mattaclp/NewLEDE/releases/download/ARMv8_PLUS/openwrt-armvirt-64-default-rootfs.tar.gz
         PACKAGE_SOC: vplus_beikeyun_s905d_s905x3_s912_s905x
         #WHOAMI: breakings
         KERNEL_REPO_URL: https://github.com/ophub/kernel/tree/main/pub/stable
