@@ -30,9 +30,6 @@ svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-pass
 #svn co https://github.com/Gzxhwq/openwrt-passwall/branches/luci-me/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 
-# add unblockneteasemusic
-git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
-
 # add luci-app-cpufreq
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 
