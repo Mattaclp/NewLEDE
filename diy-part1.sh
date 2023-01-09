@@ -20,6 +20,12 @@
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 #sed -i '$a src-git upx https://github.com/kuoruan/openwrt-upx.git' feeds.conf.default
 
+#luci-app-alist
+rm -rf feeds/packages/lang/golang
+svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
+svn co https://github.com/sbwml/luci-app-alist/trunk/luci-app-alist package/luci-app-alist
+svn co https://github.com/sbwml/luci-app-alist/trunk/alist package/alist
+
 # add helloworld
 git clone https://github.com/fw876/helloworld.git package/helloworld
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
