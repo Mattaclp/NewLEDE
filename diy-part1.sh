@@ -16,7 +16,7 @@
 #wget https://github.com/ctr54188/NanoHatOLED/raw/master/openwrt/target/linux/sunxi/patches-5.4/499-neo2-enable-i2c.patch
 #mv 499-neo2-enable-i2c.patch target/linux/sunxi/patches-5.4/
 
-git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
+#git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
 
 # add passwall
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
