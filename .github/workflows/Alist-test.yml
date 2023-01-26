@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: N1skylite
+name: Alist-test
 
 on:
   repository_dispatch:
