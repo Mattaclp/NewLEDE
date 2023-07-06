@@ -26,7 +26,7 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/DHDAXCW/NanoPi-R2S-rk3328
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: R2S.config
@@ -40,7 +40,7 @@ env:
   TZ: Asia/Shanghai
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout
