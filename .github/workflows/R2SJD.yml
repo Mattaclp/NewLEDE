@@ -27,7 +27,7 @@ on:
 
 env:
   REPO_URL: https://github.com/DHDAXCW/NanoPi-R2S-rk3328
-  REPO_BRANCH: master
+  REPO_BRANCH: skdir
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: R2S.config
   DIY_P1_SH: diy-part1.sh
