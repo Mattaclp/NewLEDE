@@ -44,14 +44,14 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # Add immortalwrt packages
 #sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackages' feeds.conf.default
 #sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtluci' feeds.conf.default
-sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackagesslim2' feeds.conf.default
-sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtlucislim2' feeds.conf.default
+#sed -i '$a src-git immortalwrtpackages https://github.com/chiwaicw/immortalwrtpackagesslim2' feeds.conf.default
+#sed -i '$a src-git immortalwrtluci https://github.com/chiwaicw/immortalwrtlucislim2' feeds.conf.default
 #svn co https://github.com/chiwaicw/immortalwrtpackages/trunk/net/gowebdav package/lean/gowebdav
 #svn co https://github.com/chiwaicw/immortalwrtluci/trunk/applications/luci-app-gowebdav package/lean/luci-app-gowebdav
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 mv luci-app-adguardhome package/lean/
-#sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
-#sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
+sed -i '$a src-git projectpackages https://github.com/immortalwrt/packages.git;openwrt-23.05' feeds.conf.default
+sed -i '$a src-git projectluci https://github.com/immortalwrt/luci.git;openwrt-23.05' feeds.conf.default
 #sed -i '$a src-git packagesImmortalWrt https://github.com/kwokwai6618/packages-ImmortalWrt.git;openwrt-18.06' feeds.conf.default
 #sed -i '$a src-git luciImmortalWrt https://github.com/kwokwai6618/luci-ImmortalWrt.git;openwrt-18.06' feeds.conf.default
 #sed -i '$a src-git immortalwrtpackages https://github.com/Mattaclp/immortalwrtpackages' feeds.conf.default
