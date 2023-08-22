@@ -30,7 +30,7 @@ git clone https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 #svn co https://github.com/Gzxhwq/openwrt-passwall/branches/luci-me/luci-app-passwall package/openwrt-passwall/luci-app-passwall
-git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+#git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
 
 # add luci-app-cpufreq
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
@@ -133,9 +133,9 @@ mv luci-app-vssr package/lean/
 #svn co https://github.com/immortalwrt/packages/trunk/net/gowebdav package/lean/gowebdav
 
 # set ARM to aarch64_generic
-rm -rf target/linux/armvirt/64/target.mk
-wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
-mv target.mk target/linux/armvirt/64/
+#rm -rf target/linux/armvirt/64/target.mk
+#wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
+#mv target.mk target/linux/armvirt/64/
 
 # set x86 DEFAULT_PACKAGES
 #rm -rf target/linux/x86/Makefile
