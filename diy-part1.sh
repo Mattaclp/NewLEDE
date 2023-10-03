@@ -27,10 +27,10 @@ git clone https://github.com/fw876/helloworld.git package/helloworld
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add passwall
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
-#svn co https://github.com/Gzxhwq/openwrt-passwall/branches/luci-me/luci-app-passwall package/openwrt-passwall/luci-app-passwall
-#git clone https://github.com/kuoruan/openwrt-upx.git package/openwrt-upx
+sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+#svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 
 # add luci-app-cpufreq
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
