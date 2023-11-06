@@ -23,7 +23,8 @@
 #sed -i '$a src-git upx https://github.com/kuoruan/openwrt-upx.git' feeds.conf.default
 
 # add helloworld
-git clone https://github.com/fw876/helloworld.git package/helloworld
+#git clone https://github.com/fw876/helloworld.git package/helloworld
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;main' feeds.conf.default
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add passwall
@@ -83,7 +84,8 @@ mv luci-app-argon-config package/lean/
 # add vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 mv lua-maxminddb package/lean/
-git clone https://github.com/jerrykuku/luci-app-vssr.git
+#git clone https://github.com/jerrykuku/luci-app-vssr.git
+git clone https://github.com/Mattaclp/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 
 # add luci-app-casaJJJos
