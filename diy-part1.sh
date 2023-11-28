@@ -24,7 +24,7 @@
 
 # add helloworld
 #git clone https://github.com/fw876/helloworld.git package/helloworld
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;xray-core' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;main' feeds.conf.default
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add passwall
