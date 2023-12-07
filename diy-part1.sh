@@ -78,8 +78,8 @@ mv luci-app-adguardhome package/lean/
 #rm -rf package/lean/luci-app-aliyundrive-webdav && mv luci-app-go-aliyundrive-webdav package/lean/
 
 # add argon-config
-git clone https://github.com/jerrykuku/luci-app-argon-config.git
-mv luci-app-argon-config package/lean/
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git
+#mv luci-app-argon-config package/lean/
 
 # add vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git
