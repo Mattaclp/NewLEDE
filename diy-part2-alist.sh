@@ -30,9 +30,10 @@ sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_gener
 #mv bakebit_nanohat_oled.py feeds/NanoHatOLED/nanohatoled/files/NanoHatOLED/
 
 # 移除重复软件包
-#rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-argon-mod
 
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 # Modify Default Theme
 #sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
