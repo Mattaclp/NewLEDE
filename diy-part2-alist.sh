@@ -36,6 +36,10 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luc
 rm -rf feeds/luci/applications/luci-app-argon-config
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
+# hysteria
+rm -rf /home/openwrt/lede/feeds/helloworld/hysteria
+cp -r feeds/passwall_packages/hysteria feeds/helloworld/
+
 # Modify Default Theme
 #sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 
