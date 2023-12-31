@@ -40,6 +40,11 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 rm -rf /home/openwrt/lede/feeds/helloworld/hysteria
 cp -r feeds/passwall_packages/hysteria feeds/helloworld/
 
+# Fix transmission
+rm -rf feeds/packages/net/transmission/files/transmission.init
+wget https://github.com/Mattaclp/NewLEDE/raw/main/transmission.init
+mv transmission.init feeds/packages/net/transmission/files/
+
 # Modify Default Theme
 #sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 
