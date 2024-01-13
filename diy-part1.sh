@@ -174,7 +174,9 @@ mv luci-app-koolproxyR package/lean/
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
-git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash
+git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
+mv package/lean/OpenClash/luci-app-openclash package/lean/
+rm -rf package/lean/OpenClash
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/lean/luci-app-openclash
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
