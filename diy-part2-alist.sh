@@ -45,6 +45,8 @@ rm -rf feeds/packages/net/transmission/files/transmission.init
 wget https://github.com/Mattaclp/NewLEDE/raw/main/transmission.init
 mv transmission.init feeds/packages/net/transmission/files/
 
+rm -rf staging_dir
+
 # Modify Default Theme
 #sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon' package/lean/default-settings/files/zzz-default-settings
 
