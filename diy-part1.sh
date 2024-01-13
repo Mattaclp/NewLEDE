@@ -37,7 +37,8 @@ sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;ma
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+merge_package https://github.com/ophub/luci-app-amlogic luci-app-amlogic
+#svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
@@ -173,8 +174,9 @@ mv luci-app-koolproxyR package/lean/
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
+git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+#svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/lean/luci-app-openclash
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
-svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/lean/luci-app-openclash
 #git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci-app-openclash  #openclash出国软件
 #git clone https://github.com/frainzy1477/luci-app-clash.git package/lean/luci-app-clash  #clash出国软件
 
