@@ -174,9 +174,38 @@ mv luci-app-koolproxyR package/lean/
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
-git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
-mv package/lean/OpenClash/luci-app-openclash package/lean/
-rm -rf package/lean/OpenClash
+echo "开始 DIY1 配置……"
+echo "========================="
+
+function merge_package(){
+    repo=`echo $1 | rev | cut -d'/' -f 1 | rev`
+    pkg=`echo $2 | rev | cut -d'/' -f 1 | rev`
+    # find package/ -follow -name $pkg -not -path "package/custom/*" | xargs -rt rm -rf
+    git clone --depth=1 --single-branch $1
+    mv $2 package/custom/
+    rm -rf $repo
+}
+function drop_package(){
+    find package/ -follow -name $1 -not -path "package/custom/*" | xargs -rt rm -rf
+}
+function merge_feed(){
+    if [ ! -d "feed/$1" ]; then
+        echo >> feeds.conf.default
+        echo "src-git $1 $2" >> feeds.conf.default
+    fi
+    ./scripts/feeds update $1
+    ./scripts/feeds install -a -p $1
+}
+rm -rf package/custom; mkdir package/custom
+
+merge_package https://github.com/vernesong/OpenClash OpenClash/luci-app-openclash
+
+echo "========================="
+echo " DIY1 配置完成……"
+
+#git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
+#mv package/lean/OpenClash/luci-app-openclash package/lean/
+#rm -rf package/lean/OpenClash
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/lean/luci-app-openclash
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
