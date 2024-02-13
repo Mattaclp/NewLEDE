@@ -183,6 +183,7 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 
+# 科学上网插件
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 
 #git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
@@ -199,13 +200,13 @@ git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclas
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 
 # Add po2lmo
-git clone https://github.com/openwrt-dev/po2lmo.git
-pushd po2lmo
-make && sudo make install
-popd
+#git clone https://github.com/openwrt-dev/po2lmo.git
+#pushd po2lmo
+#make && sudo make install
+#popd
 
-Add UnblockNeteaseMusic
-git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+#Add UnblockNeteaseMusic
+#git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
 
 # Add Beginner-Go packages
 #svn co https://github.com/Beginner-Go/my-packages/trunk/luci-app-control-webrestriction package/lean/luci-app-control-webrestriction
