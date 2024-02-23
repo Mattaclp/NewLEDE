@@ -173,22 +173,9 @@ mv luci-app-koolproxyR package/lean/
 # Add Mattraks helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattraks/helloworld' feeds.conf.default
 
-# Git稀疏克隆，只克隆指定目录到本地
-function git_sparse_clone() {
-  branch="$1" repourl="$2" && shift 2
-  git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
-  repodir=$(echo $repourl | awk -F '/' '{print $(NF)}')
-  cd $repodir && git sparse-checkout set $@
-  mv -f $@ ../package
-  cd .. && rm -rf $repodir
-}
-
-# 科学上网插件
-git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
-
-#git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
-#mv package/lean/OpenClash/luci-app-openclash package/lean/
-#rm -rf package/lean/OpenClash
+git clone -b dev https://github.com/vernesong/OpenClash.git package/lean/OpenClash
+mv package/lean/OpenClash/luci-app-openclash package/lean/
+rm -rf package/lean/OpenClash
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/lean/luci-app-openclash
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
