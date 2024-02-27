@@ -15,10 +15,10 @@ rm -rf feeds/packages/net/curl
 git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
 #luci-app-alist
-#rm -rf feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang
 #svn export https://github.com/sbwml/packages_lang_golang/trunk feeds/packages/lang/golang
 #svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
-#git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 
 # Add shadowsocks-rust 1.15.0-alpha.4
 #rm -rf package/helloworld/shadowsocks-rust
