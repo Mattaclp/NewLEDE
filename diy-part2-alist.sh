@@ -16,6 +16,8 @@ git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/cu
 
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
+rm -rf feeds/helloworld/xray*
+cp -r feeds/passwall_packages/xray* feeds/helloworld/
 
 #luci-app-alist
 #rm -rf feeds/packages/lang/golang
