@@ -38,6 +38,9 @@ sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;ma
 
 # Add luci-app-amlogic
 #svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-amlogic
+mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
+rm -rf package-temp
 
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
