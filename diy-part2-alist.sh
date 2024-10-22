@@ -19,6 +19,11 @@ cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
 rm -rf feeds/helloworld/xray*
 cp -r feeds/passwall_packages/xray* feeds/helloworld/
 
+rm -rf feeds/helloworld/gn/Makefile
+wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/gn/gnMakefile
+mv gnMakefile feeds/helloworld/gn/Makefile
+
+
 #luci-app-alist
 #rm -rf feeds/packages/lang/golang
 #svn export https://github.com/sbwml/packages_lang_golang/trunk feeds/packages/lang/golang
