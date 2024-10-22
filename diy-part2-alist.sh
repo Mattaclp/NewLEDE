@@ -16,8 +16,11 @@ git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/cu
 
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
-rm -rf feeds/helloworld/xray*
-cp -r feeds/passwall_packages/xray* feeds/helloworld/
+#rm -rf feeds/helloworld/xray*
+#cp -r feeds/passwall_packages/xray* feeds/helloworld/
+rm -rf feeds/passwall_packages/xray*
+cp -r feeds/helloworld/xray* feeds/passwall_packages/
+
 
 rm -rf feeds/helloworld/gn/Makefile
 wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/gn/gnMakefile
@@ -78,6 +81,6 @@ rm -rf staging_dir
 #sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 修改内核版本
-sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=5.15/g' target/linux/x86/Makefile
+#sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=5.15/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/x86/Makefile
 #sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/g' target/linux/rockchip/Makefile
