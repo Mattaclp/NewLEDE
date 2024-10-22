@@ -22,6 +22,10 @@
 #sed -i '$a src-git diy1 https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 #sed -i '$a src-git upx https://github.com/kuoruan/openwrt-upx.git' feeds.conf.default
 
+# change feeds.conf.default
+rm -rf feeds.conf.default
+wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/feeds.conf.default
+
 # add helloworld
 #git clone https://github.com/fw876/helloworld.git package/helloworld
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
