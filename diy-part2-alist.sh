@@ -20,7 +20,8 @@ cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
 #cp -r feeds/passwall_packages/xray* feeds/helloworld/
 rm -rf feeds/passwall_packages/xray-core
 cp -r feeds/helloworld/xray-core feeds/passwall_packages/
-
+rm -rf feeds/helloworld/xray-plugin/
+cp -r feeds/passwall_packages/xray-plugin feeds/helloworld/
 
 rm -rf feeds/helloworld/gn/Makefile
 wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/gn/gnMakefile
