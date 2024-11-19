@@ -13,4 +13,4 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-a
 git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 rm -rf feeds/packages/net/smartdns feeds/luci/applications/luci-app-smartdns
 git clone --depth=1 -b master https://github.com/pymumu/openwrt-smartdns package/lean/smartdns
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
+git clone --depth=1 -b master https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
