@@ -14,6 +14,10 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 rm -rf feeds/packages/net/curl
 git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
+rm -rf feeds/packages/net/smartdns feeds/luci/applications/luci-app-smartdns
+git clone --depth=1 -b master https://github.com/pymumu/openwrt-smartdns package/lean/smartdns
+git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
+
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
 #rm -rf feeds/helloworld/xray*
