@@ -1,4 +1,4 @@
-sed -i '$a src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main' feeds.conf.default
+sed -i '$a src-git mihomo https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' feeds.conf.default
 
 # add vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git
