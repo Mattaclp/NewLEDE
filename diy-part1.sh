@@ -26,16 +26,16 @@
 rm -rf feeds.conf.default
 wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/1806feeds.conf.default/feeds.conf.default
 
-# add helloworld
-#git clone https://github.com/fw876/helloworld.git package/helloworld
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
-#git clone https://github.com/Mattaclp/helloworld.git package/helloworld
-
 # add passwall
 sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
+
+# add helloworld
+#git clone https://github.com/fw876/helloworld.git package/helloworld
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
+#git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add luci-app-cpufreq
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
