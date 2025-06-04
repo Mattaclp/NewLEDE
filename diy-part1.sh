@@ -144,7 +144,7 @@ mv luci-app-vssr package/lean/
 
 # set ARM to aarch64_generic
 git clone https://github.com/Mattaclp/lede2.git
-cp -r lede2/target/linux/armvirt /home/openwrt/lede/target/linux/
+cp -r lede2/target/linux/armvirt target/linux/
 rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
