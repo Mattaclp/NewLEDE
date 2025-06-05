@@ -20,6 +20,7 @@ git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/cu
 #git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
 rm -rf feeds/packages/net/microsocks
+cp -r feeds/passwall_packages/microsocks feeds/packages/net/
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
 #rm -rf feeds/helloworld/xray*
