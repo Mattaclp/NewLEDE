@@ -19,7 +19,19 @@ git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/cu
 #git clone --depth=1 -b master https://github.com/pymumu/openwrt-smartdns package/lean/smartdns
 #git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
+rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/dns2socks
+rm -rf feeds/packages/net/dns2tcp
+rm -rf feeds/packages/net/dnsproxy
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/trojan
+rm -rf feeds/packages/net/v2raya
+rm -rf feeds/packages/net/shadowsocks-libev
+rm -rf feeds/packages/net/tcping
+rm -rf feeds/packages/net/v2ray-geodata
 rm -rf feeds/packages/net/microsocks
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/xray-core
 cp -r feeds/passwall_packages/microsocks feeds/packages/net/
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
@@ -38,10 +50,11 @@ mv gnMakefile feeds/helloworld/gn/Makefile
 
 
 #luci-app-alist
-#rm -rf feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang
 #svn export https://github.com/sbwml/packages_lang_golang/trunk feeds/packages/lang/golang
 #svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
 #git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
 # 修改 Makefile
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/g' {}
