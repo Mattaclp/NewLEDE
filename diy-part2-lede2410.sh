@@ -16,4 +16,4 @@ sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/luci2/bin/config_gener
 sed -i "s/hostname='LEDE'/hostname='OpenWrt'/g" package/base-files/luci2/bin/config_generate
 
 # 修改内核版本
-#sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=6.12/g' target/linux/x86/Makefile
+sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=6.12/g' target/linux/x86/Makefile
