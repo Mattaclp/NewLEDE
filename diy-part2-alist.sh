@@ -33,6 +33,17 @@ rm -rf feeds/packages/net/microsocks
 rm -rf feeds/packages/net/sing-box
 rm -rf feeds/packages/net/xray-core
 cp -r feeds/passwall_packages/microsocks feeds/packages/net/
+cp -r feeds/passwall_packages/dns2socks feeds/packages/net/
+cp -r feeds/helloworld/dns2tcp feeds/packages/net/
+cp -r feeds/helloworld/dnsproxy feeds/packages/net/
+cp -r feeds/helloworld/mosdns feeds/packages/net/
+cp -r feeds/helloworld/trojan feeds/packages/net/
+cp -r feeds/helloworld/v2raya feeds/packages/net/
+cp -r feeds/helloworld/shadowsocks-libev feeds/packages/net/
+cp -r feeds/helloworld/tcping feeds/packages/net/
+cp -r feeds/passwall_packages/v2ray-geodata feeds/packages/net/
+cp -r feeds/passwall_packages/sing-box feeds/packages/net/
+cp -r feeds/passwall_packages/xray-core feeds/packages/net/
 rm -rf feeds/helloworld/chinadns-ng
 cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
 #rm -rf feeds/helloworld/xray*
