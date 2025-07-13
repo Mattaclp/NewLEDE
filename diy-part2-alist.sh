@@ -33,6 +33,7 @@ rm -rf feeds/packages/net/microsocks
 rm -rf feeds/packages/net/sing-box
 rm -rf feeds/packages/net/xray-core
 cp -r feeds/passwall_packages/microsocks feeds/packages/net/
+cp -r feeds/passwall_packages/chinadns-ng feeds/packages/net/
 cp -r feeds/passwall_packages/dns2socks feeds/packages/net/
 cp -r feeds/helloworld/dns2tcp feeds/packages/net/
 cp -r feeds/helloworld/dnsproxy feeds/packages/net/
