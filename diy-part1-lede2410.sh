@@ -1,3 +1,5 @@
+git checkout 874fee50ebb86b7acea5b57e2ba794a9897b6355
+
 #sed -i '$a src-git mihomo https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' feeds.conf.default
 
 # add vssr
