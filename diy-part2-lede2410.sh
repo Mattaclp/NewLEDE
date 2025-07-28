@@ -19,6 +19,49 @@ sed -i "s/hostname='LEDE'/hostname='OpenWrt'/g" package/base-files/luci2/bin/con
 # 修改内核版本
 #sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=6.12/g' target/linux/x86/Makefile
 
+rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/dns2socks
+rm -rf feeds/packages/net/dns2tcp
+rm -rf feeds/packages/net/dnsproxy
+rm -rf feeds/packages/net/mosdns
+rm -rf feeds/packages/net/trojan
+rm -rf feeds/packages/net/v2raya
+rm -rf feeds/packages/net/shadowsocks-libev
+rm -rf feeds/packages/net/tcping
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf feeds/packages/net/microsocks
+rm -rf feeds/packages/net/sing-box
+rm -rf feeds/packages/net/xray-core
+cp -r feeds/passwall_packages/microsocks feeds/packages/net/
+cp -r feeds/passwall_packages/chinadns-ng feeds/packages/net/
+cp -r feeds/passwall_packages/dns2socks feeds/packages/net/
+cp -r feeds/helloworld/dns2tcp feeds/packages/net/
+cp -r feeds/helloworld/dnsproxy feeds/packages/net/
+cp -r feeds/helloworld/mosdns feeds/packages/net/
+cp -r feeds/helloworld/trojan feeds/packages/net/
+cp -r feeds/helloworld/v2raya feeds/packages/net/
+cp -r feeds/helloworld/shadowsocks-libev feeds/packages/net/
+cp -r feeds/helloworld/tcping feeds/packages/net/
+cp -r feeds/passwall_packages/v2ray-geodata feeds/packages/net/
+cp -r feeds/passwall_packages/sing-box feeds/packages/net/
+cp -r feeds/passwall_packages/xray-core feeds/packages/net/
+rm -rf feeds/helloworld/chinadns-ng
+cp -r feeds/passwall_packages/chinadns-ng feeds/helloworld/
+#rm -rf feeds/helloworld/xray*
+#cp -r feeds/passwall_packages/xray* feeds/helloworld/
+#rm -rf feeds/passwall_packages/xray-core
+#cp -r feeds/helloworld/xray-core feeds/passwall_packages/
+rm -rf feeds/helloworld/xray-plugin/
+cp -r feeds/passwall_packages/xray-plugin feeds/helloworld/
+rm -rf feeds/helloworld/naiveproxy
+cp -r feeds/passwall_packages/naiveproxy feeds/helloworld/
+
+rm -rf feeds/helloworld/hysteria
+cp -r feeds/passwall_packages/hysteria feeds/helloworld/
+
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
   git clone --depth=1 -b $branch --single-branch --filter=blob:none --sparse $repourl
