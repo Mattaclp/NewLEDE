@@ -1,4 +1,4 @@
-git checkout 874fee50ebb86b7acea5b57e2ba794a9897b6355
+#git checkout 874fee50ebb86b7acea5b57e2ba794a9897b6355
 
 sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
 sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main' feeds.conf.default
