@@ -1,5 +1,9 @@
 git checkout 874fee50ebb86b7acea5b57e2ba794a9897b6355
 
+sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
+sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
+
 #sed -i '$a src-git mihomo https://github.com/nikkinikki-org/OpenWrt-nikki.git;main' feeds.conf.default
 
 # add vssr
