@@ -96,7 +96,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git packag
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # hysteria
-rm -rf /home/openwrt/lede/feeds/helloworld/hysteria
+rm -rf feeds/helloworld/hysteria
 cp -r feeds/passwall_packages/hysteria feeds/helloworld/
 
 # Fix transmission
