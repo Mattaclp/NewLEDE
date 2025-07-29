@@ -1,5 +1,7 @@
 # 移除重复软件包
 rm -rf feeds/luci/applications/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-passwall2
+rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/themes/luci-theme-argon
 #rm -rf feeds/luci/themes/luci-theme-argon-mod
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
