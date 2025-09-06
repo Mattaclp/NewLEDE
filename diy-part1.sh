@@ -46,6 +46,9 @@ git clone https://github.com/ophub/luci-app-amlogic.git  package-temp/luci-app-a
 mv -f package-temp/luci-app-amlogic/luci-app-amlogic package/lean/
 rm -rf package-temp
 
+# Add OpenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+
 # Add my helloworld
 #sed -i '$a src-git helloworld https://github.com/Mattaclp/helloworld' feeds.conf.default
 
