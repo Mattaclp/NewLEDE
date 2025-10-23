@@ -12,8 +12,8 @@
 sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
 sed -i "s/hostname='LEDE'/hostname='OpenWrt'/g" package/base-files/files/bin/config_generate
 
-#rm -rf feeds/packages/net/curl
-#git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
+rm -rf feeds/packages/net/curl
+git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
 
 #rm -rf feeds/packages/net/smartdns feeds/luci/applications/luci-app-smartdns
 #git clone --depth=1 -b master https://github.com/pymumu/openwrt-smartdns package/lean/smartdns
