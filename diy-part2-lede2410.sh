@@ -14,9 +14,9 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-ap
 #git clone --depth=1 -b master https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/luci2/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/luci/bin/config_generate
 
-sed -i "s/hostname='LEDE'/hostname='OpenWrt'/g" package/base-files/luci2/bin/config_generate
+sed -i "s/hostname='LEDE'/hostname='OpenWrt'/g" package/base-files/luci/bin/config_generate
 
 rm -rf feeds/packages/net/curl
 git clone https://github.com/sbwml/feeds_packages_net_curl feeds/packages/net/curl
