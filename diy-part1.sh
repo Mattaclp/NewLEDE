@@ -8,6 +8,8 @@
 # Blog: https://p3terx.com
 #=============================================================
 
+git checkout 8db09d2ea76f11bb3f60ad552121b802e1473302
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
