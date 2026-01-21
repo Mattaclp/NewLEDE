@@ -29,8 +29,8 @@ rm -rf feeds.conf.default
 wget https://github.com/Mattaclp/NewLEDE/raw/refs/heads/main/1806feeds.conf.default/feeds.conf.default
 
 # add passwall
-sed -i '$a src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main' feeds.conf.default
-sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' feeds.conf.default
+sed -i '$a src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main' feeds.conf.default
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 
