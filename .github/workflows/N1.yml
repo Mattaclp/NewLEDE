@@ -21,15 +21,15 @@ on:
       - '.config'
   schedule:
     - cron: 30 20 * * *
-  watch:
-    types: started
+#  watch:
+#    types: started
 
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: vplus.config
+  CONFIG_FILE: myN1F.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2-alist.sh
   UPLOAD_BIN_DIR: true
