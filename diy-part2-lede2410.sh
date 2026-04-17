@@ -65,7 +65,7 @@ rm -rf feeds/helloworld/hysteria
 cp -r feeds/passwall_packages/hysteria feeds/helloworld/
 
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
