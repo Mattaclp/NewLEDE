@@ -36,7 +36,7 @@ sed -i '$a src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall
 
 # add helloworld
 #git clone https://github.com/fw876/helloworld.git package/helloworld
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;dev' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;master' feeds.conf.default
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
 # add luci-app-cpufreq
