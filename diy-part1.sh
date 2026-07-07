@@ -7,7 +7,8 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=============================================================
-
+# Enable Zima MMC
+sed -i 's/# CONFIG_PCI_MMCONFIG is not set/CONFIG_PCI_MMCONFIG=y/' target/linux/x86/64/config-6.12
 #git checkout 8db09d2ea76f11bb3f60ad552121b802e1473302
 
 # Uncomment a feed source
