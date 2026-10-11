@@ -37,7 +37,7 @@ sed -i '$a src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 
 # add helloworld
-#git clone https://github.com/fw876/helloworld.git package/helloworld
+git clone https://github.com/fw876/helloworld.git package/helloworld
 #sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;main' feeds.conf.default
 #git clone https://github.com/Mattaclp/helloworld.git package/helloworld
 
